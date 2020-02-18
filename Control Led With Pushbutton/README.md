@@ -4,3 +4,21 @@ The microcontroller is an Arduino
 This project's Youtube link is https://youtu.be/kSziUFDXNtA
 
 I have learned this from https://aiversity.com
+
+Materials
+
+2 pin Pushbutton
+Arduino Uno R3
+Led
+
+Connections
+
+Pushbutton's Terminal 1 --> Arduino 5v
+
+Pushbutton's Output --> Arduino A0(Analog)
+
+Led Positive --> 330k ohm resistor
+
+330k ohm resistor --> Arduino 11 Pin
+
+Led Negative --> Arduino Gnd
