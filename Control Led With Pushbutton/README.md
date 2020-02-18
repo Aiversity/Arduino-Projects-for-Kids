@@ -21,6 +21,6 @@ Pushbutton's Output --> Arduino A0(Analog)
 
 Led Positive --> 330k ohm resistor
 
-330k ohm resistor --> Arduino 11 Pin
+330k ohm resistor --> Arduino 13 Pin
 
 Led Negative --> Arduino Gnd
