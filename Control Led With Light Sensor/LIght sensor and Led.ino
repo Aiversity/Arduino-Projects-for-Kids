@@ -10,7 +10,8 @@ void loop() {
   // put your main code here, to run repeatedly:
   Light = analogRead(A0);
   Serial.println(Light);
-  if(Light >= 870){
+  //To check the second value try test.ino in the previous folder. My value is 870 and above
+  if(Light >= 870){  
     digitalWrite(13, 1);
   }
   else{
