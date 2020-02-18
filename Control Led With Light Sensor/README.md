@@ -1,4 +1,4 @@
-This code is for controlling LED with IR_sensor using Arduino. I have recorded the demo for the same code which you can watch on https://youtu.be/CWUEzyjsE0A
+This code is for controlling LED with IR_sensor using Arduino. I have recorded the demo for the same code which you can watch on https://youtu.be/aDo2hPOlHaU
 
 To learn more, please visit http://aiversity.com
 
