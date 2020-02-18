@@ -8,11 +8,15 @@ To learn more, please visit http://aiversity.com
 Connections
 
 Potentionmeter's 5v -->  Arduino 5v
+
 Potentionmeter's Output --> Arduino A0(Analog)
+
 Potentionmeter's Gnd --> Arduino Gnd
 
 Led Positive --> 330k ohm resistor
+
 330k ohm resistor --> Arduino 11 Pin
+
 Led Negative --> Arduino Gnd
 
 
