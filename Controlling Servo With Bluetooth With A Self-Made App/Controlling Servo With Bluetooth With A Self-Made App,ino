@@ -1,0 +1,38 @@
+#include <Servo.h>
+#include <SoftwareSerial.h> // TX RX software library for bluetooth
+
+char Incoming_value = 0;
+Servo servo;                   
+SoftwareSerial bluetooth(10, 11);
+void setup() 
+{
+  Serial.begin(9600);         
+  pinMode(13, OUTPUT);       
+  servo.attach(9);
+  bluetooth.begin(9600);
+}
+
+void loop()
+{
+  if(bluetooth.available() > 2)  
+  {
+    int servopos = bluetooth.read();
+    int servopos1 = bluetooth.read();
+    int servoangle = (servopos1 *256) + servopos;
+    Serial.print(servoangle);
+    Serial.print("   ");
+    Serial.print(servopos);
+    Serial.print("   ");
+    Serial.println(servopos1);
+
+    if (servoangle >= 1000 && servoangle <1180) {
+      int servo1 = servoangle;
+      servo1 = map(servo1, 1000, 1180, 0, 180);
+      servo.write(servo1);
+      Serial.println("Servo 1 Moving");
+      delay(10);
+    }
+
+  }
+  }                            
+ 
